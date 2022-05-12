@@ -1,0 +1,59 @@
+.inputWrap {
+    margin-top: 50px;
+    position: relative;
+}
+
+.input {
+    width: 100%;
+    border: 1px solid #D0CFCF;
+    border-radius: 4px;
+    background: #F8F8F8;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.87);
+    padding: 14px 16px;
+    outline: none;
+    transition: .2s;
+}
+
+.inputError {
+    border: 2px solid #CB3D40;
+    padding: 13px 16px;
+}
+
+.label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #7E7E7E;
+    transition: .2s;
+}
+
+.labelError {
+    color: #CB3D40;
+}
+
+.input:focus + .label, .label.active {
+    padding: 0 5px;
+    top: -1px;
+    left: 15px;
+    background: #F8F8F8;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.helper, .errorText {
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 15px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #7E7E7E;
+}
+
+.errorText {
+    color: #CB3D40;
+}

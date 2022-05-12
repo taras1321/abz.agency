@@ -1,0 +1,47 @@
+.wrapper {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: rgba(0, 0, 0, 0.87);
+    text-align: center;
+}
+
+.form {
+    position: relative;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+}
+
+.selectTitle {
+    margin-top: 43px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.formError {
+    color: #CB3D40;
+    font-weight: 400;
+    font-size: 16px;
+    position: absolute;
+    top: calc(100% + 30px);
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+@media (max-width: 425px) {
+    .form {
+        width: 100%;
+    }
+}
