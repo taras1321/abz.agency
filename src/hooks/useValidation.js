@@ -43,7 +43,7 @@ export default function useValidation(value, validations, fieldName) {
           break;
 
         case 'isPhone':
-          value.match(/^[0-9\-\+]{9,15}$/)
+          value.match(/^[0-9\-\\+]{9,15}$/)
             ? removeError(validation)
             : setError(validation, 'The phone format is invalid.');
           break;
@@ -52,7 +52,7 @@ export default function useValidation(value, validations, fieldName) {
           break;
       }
     }
-  }, [value, validations]);
+  }, [value, validations, fieldName]);
 
   useEffect(() => {
     if (errors.length) {
